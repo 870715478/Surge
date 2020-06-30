@@ -1,5 +1,6 @@
 #!name=Get Cookie
 #!desc=get cookie
+#!system=ios
 
 [Script]
 #wps(zt.wps.cn)
