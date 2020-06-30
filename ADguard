@@ -1,0 +1,8 @@
+#!name=ADguard
+#!desc=NobyDa 去广告合集。
+#!system=ios
+
+[Rule]
+# NobyDa去广告
+DOMAIN-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block.txt,REJECT
+RULE-SET,https://raw.githubusercontent.com/NobyDa/ND-AD/master/Surge/AD_Block_Add.txt,REJECT
