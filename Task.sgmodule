@@ -1,0 +1,26 @@
+#!name=Task
+#!desc=该模块适用于定时签到:个人收集常用签到脚本。建议本地安装以便自定义修改签到时间。
+#!system=ios
+
+[Script]
+
+# > 京东
+京东签到 = type=cron,cronexp=15 0 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+
+中青看点 = type=cron,cronexp=0 */6 */2 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
+
+wps = type=cron,cronexp= 10 0 6 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js,script-update-interval=0
+
+腾讯新闻 = type=cron,cronexp=*/1 1-23 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews2.js,script-update-interval=0,wake-system=1
+
+# 趣头条
+# 打开 APP 进入签到:  `右上角` > `签到`
+# 阅读篇数获取Cookie:`小视频`中播放一段时间视频即可获取,具体的阅读篇数奖励请到应用内手动点击
+# 首页金币奖励:此Cookie在首页的推荐中随机出现,随机获取,并不一定会出现。
+趣头条 = type=cron,cronexp=0 0/30 * * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js,script-update-interval=0
+
+# 来客有礼
+来客有礼 = type=cron,cronexp=0/10 43 7 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
+
+#微博
+微博签到 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,script-update-interval=0
