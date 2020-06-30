@@ -1,0 +1,19 @@
+#!name=Get Cookie
+#!desc=get cookie
+
+[Script]
+#wps(zt.wps.cn)
+http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
+
+#腾讯新闻(api.inews.qq.com)
+腾讯新闻 = type=http-request,pattern=https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews2.js
+
+#微博(api.weibo.cn, pay.sc.weibo.com)
+# 获取微博 Cookie.
+weibo.js = type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+# 微博钱包签到Cookie
+weibo.js = type=http-request,pattern=https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+
+
+[MITM]
+hostname = %APPEND% zt.wps.cn, api.inews.qq.com, api.weibo.cn, pay.sc.weibo.com
