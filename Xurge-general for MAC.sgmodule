@@ -2,5 +2,5 @@
 #!desc=http-api = examplekey@0.0.0.0:6169
 
 [General]
-http-api = ChenGou@0.0.0.0:6169
+http-api = Chen_Gou@0.0.0.0:6169
 
