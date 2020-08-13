@@ -1,0 +1,6 @@
+#!name=Xurge-general for MAC
+#!desc=http-api = examplekey@0.0.0.0:6169
+
+[General]
+http-api = ChenGou@0.0.0.0:6169
+
